@@ -26,7 +26,7 @@ jobs:
       - run:
           name: Build
           command: |
-            mvn clean -s settings.xml compile
+            mvn clean package
       - run:
           name: cloudhub deployment
           command: |
